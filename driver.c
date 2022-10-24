@@ -5,7 +5,7 @@
 
 int main(int argc, char* argv[]){
     // Create output PPM file
-    FILE* PPMOut = fopen("Fractal.ppm", "w");
+    FILE* PPMOut = fopen("Fractal.ppm", "wb");
     assert(PPMOut != NULL);
 
     // Write header data to PPM file
