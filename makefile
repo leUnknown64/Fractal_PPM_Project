@@ -1,7 +1,7 @@
 all: build
 
 build:
-	gcc Image.c driver.c -o Fractal -Wall
+	gcc main.c Image.c -o Fractal -Wall
 
 run:
 	./Fractal
