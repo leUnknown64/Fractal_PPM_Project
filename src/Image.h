@@ -11,25 +11,26 @@ typedef struct Pixel{
     unsigned short blue;
 } pixel_t;
 
-/* Parameters: output - a file pointer to a PPM file
-               width - the width of the image
-               height - the height of the image
+/* Parameters: image - file pointer to a PPM file
+ *			   pixelData - array holding pixels
+ *             width - image width
+ *             height - image height
  * Return: nothing
- * This function writes the header for a PPM Image to the output file.
+ * Outputs a PPM image with a header and pixel data.
  */
-void writeHeader(FILE* output, unsigned int width, unsigned int height);
+void outputImage(FILE* image, pixel_t* pixelData, unsigned int width, unsigned int height);
 
-// Implement plotting algorithm for mandlebrot
+/* Parameters: width - image width
+ *             height - image height
+ * Return: pixelData - array to hold RGB values
+ * Allocates memory for width x height pixels
+ */
+pixel_t* allocPixels(unsigned int width, unsigned int height);
 
-// Coloring pattern for fractal PPM
-
-/* Parameters: output - a file pointer to a PPM file
-               width - the width of the image
-               height - the height of the image
+/* Parameters: pixelData - array holding pixels
  * Return: nothing
- * This function writes all pixels to the PPM file.
+ * Frees memory for pixels
  */
-void writePixels(FILE* output, unsigned int width, unsigned int height);
+void freePixels(pixel_t* pixelData);
 
-// more to come
 #endif
