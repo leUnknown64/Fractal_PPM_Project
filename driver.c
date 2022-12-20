@@ -13,6 +13,6 @@ int main(int argc, char* argv[]){
 
     // Write pixels to PPM file
     writePixels(PPMOut, WIDTH, HEIGHT);
-
+	int i = 6;
     return 0;
 }
