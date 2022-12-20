@@ -1,4 +1,4 @@
-#include "Image.h"
+#include "src/Image.h"
 #include<assert.h>
 #define WIDTH 800
 #define HEIGHT 600
