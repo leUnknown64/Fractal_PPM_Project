@@ -1,4 +1,4 @@
 ﻿# Fractal_PPM_Project
 
-I made this project to tinker with displaying images in PPM files and to get more familiar with C programming.
-I chose to work with fractals because why not?
+A C program that generates a PPM image of a fractal with the Mandelbrot set.
+I plan on adding an interactive menu to this project, along with a system to parse the input from a text file.
