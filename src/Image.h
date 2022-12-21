@@ -22,10 +22,10 @@ void outputImage(FILE* image, pixel_t* pixelData, unsigned int width, unsigned i
 
 /* Parameters: width - image width
  *             height - image height
- * Return: pixelData - array to hold RGB values
+ * Return: pixelData - array which holds pixels
  * Allocates memory for width x height pixels
  */
-pixel_t* allocPixels(unsigned int width, unsigned int height);
+pixel_t* allocatePixels(unsigned int width, unsigned int height);
 
 /* Parameters: pixelData - array holding pixels
  * Return: nothing

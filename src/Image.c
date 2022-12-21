@@ -8,7 +8,7 @@ void outputImage(FILE* image, pixel_t* pixelData, unsigned int width, unsigned i
 	fwrite(pixelData, sizeof(pixel_t)*width*height, 1, image);
 }
 
-pixel_t* allocPixels(unsigned int width, unsigned int height){
+pixel_t* allocatePixels(unsigned int width, unsigned int height){
 	pixel_t* pixelData = malloc(sizeof(pixel_t)*width*height);
 	return pixelData;
 }
