@@ -1,7 +1,7 @@
+# Variables
+TARGET=FractalGenerator
+
 all: build
 
 build:
-	gcc main.c src/Image.c -o Fractal -Wall
-
-run:
-	./Fractal
+	gcc main.c src/Image.c src/Fractal.c -o $(TARGET) -Wall
